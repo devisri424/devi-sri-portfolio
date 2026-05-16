@@ -1,26 +1,51 @@
 import { createFileRoute } from "@tanstack/react-router";
+import ParticlesBackground from "@/components/portfolio/ParticlesBackground";
+import Navbar from "@/components/portfolio/Navbar";
+import Hero from "@/components/portfolio/Hero";
+import About from "@/components/portfolio/About";
+import Skills from "@/components/portfolio/Skills";
+import Projects from "@/components/portfolio/Projects";
+import Achievements from "@/components/portfolio/Achievements";
+import CodingProfiles from "@/components/portfolio/CodingProfiles";
+import Articles from "@/components/portfolio/Articles";
+import Contact from "@/components/portfolio/Contact";
+import Footer from "@/components/portfolio/Footer";
 
 export const Route = createFileRoute("/")({
+  head: () => ({
+    meta: [
+      { title: "Devi Sri R — AI & ML Engineer Portfolio" },
+      {
+        name: "description",
+        content:
+          "Portfolio of Devi Sri R — B.Tech AI & DS student and aspiring Machine Learning Engineer. Projects, skills, achievements and contact.",
+      },
+      { property: "og:title", content: "Devi Sri R — AI & ML Engineer Portfolio" },
+      {
+        property: "og:description",
+        content: "AI/ML student portfolio showcasing projects, skills and achievements.",
+      },
+    ],
+  }),
   component: Index,
 });
 
-// IMPORTANT: Replace this placeholder. For sites with multiple pages (About, Services, Contact, etc.),
-// create separate route files (about.tsx, services.tsx, contact.tsx) — don't put all pages in this file.
-function PlaceholderIndex() {
-  return (
-    <div
-      className="flex min-h-screen items-center justify-center"
-      style={{ backgroundColor: "#fcfbf8" }}
-    >
-      <img
-        data-lovable-blank-page-placeholder="REMOVE_THIS"
-        src="https://cdn.gpteng.co/blank-app-v1.svg"
-        alt="Your app will live here!"
-      />
-    </div>
-  );
-}
-
 function Index() {
-  return <PlaceholderIndex />;
+  return (
+    <main className="relative min-h-screen bg-background text-foreground">
+      <ParticlesBackground />
+      <div className="relative z-10">
+        <Navbar />
+        <Hero />
+        <About />
+        <Skills />
+        <Projects />
+        <Achievements />
+        <CodingProfiles />
+        <Articles />
+        <Contact />
+        <Footer />
+      </div>
+    </main>
+  );
 }
