@@ -57,7 +57,9 @@ export default function Skills() {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">Toolkit</p>
+          <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">
+            Toolkit
+          </p>
           <h2 className="text-4xl md:text-5xl font-bold">
             Skills & <span className="text-gradient">Technologies</span>
           </h2>
@@ -73,26 +75,20 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="glass glass-hover rounded-2xl p-6"
             >
-              <h3 className="text-lg font-bold mb-5 text-gradient">{cat.title}</h3>
+              <h3 className="text-lg font-bold mb-5 text-gradient">
+                {cat.title}
+              </h3>
+
               <div className="space-y-4">
                 {cat.skills.map((s) => (
                   <div key={s.name}>
-                    <div className="flex justify-between text-sm mb-1.5">
+                    <div className="text-sm">
                       <span>{s.name}</span>
-                      <span className="text-muted-foreground">{s.level}%</span>
-                    </div>
-                    <div className="h-1.5 rounded-full bg-muted overflow-hidden">
-                      <motion.div
-                        initial={{ width: 0 }}
-                        whileInView={{ width: `${s.level}%` }}
-                        viewport={{ once: true }}
-                        transition={{ duration: 1.2, ease: "easeOut" }}
-                        className="h-full bg-gradient-primary rounded-full"
-                      />
                     </div>
                   </div>
                 ))}
               </div>
+
             </motion.div>
           ))}
         </div>
