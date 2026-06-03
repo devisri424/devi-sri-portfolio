@@ -1,5 +1,4 @@
 import { createFileRoute } from "@tanstack/react-router";
-import ParticlesBackground from "@/components/portfolio/ParticlesBackground";
 import Navbar from "@/components/portfolio/Navbar";
 import Hero from "@/components/portfolio/Hero";
 import About from "@/components/portfolio/About";
@@ -33,7 +32,6 @@ export const Route = createFileRoute("/")({
 function Index() {
   return (
     <main className="relative min-h-screen bg-background text-foreground">
-      <ParticlesBackground />
       <div className="relative z-10">
         <Navbar />
         <Hero />

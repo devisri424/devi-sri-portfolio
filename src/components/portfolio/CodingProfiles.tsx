@@ -6,21 +6,21 @@ const profiles = [
     name: "LeetCode",
     icon: SiLeetcode,
     stat: "DSA Practice",
-    color: "text-yellow-400",
+    color: "text-primary",
     url: "https://leetcode.com/u/DEVI_SRI24/",
   },
   {
     name: "CodeChef",
     icon: SiCodechef,
     stat: "Competitive Coding",
-    color: "text-orange-400",
+    color: "text-primary",
     url: "https://www.codechef.com/users/devi_sri24",
   },
   {
     name: "HackerRank",
     icon: SiHackerrank,
     stat: "Problem Solver",
-    color: "text-green-400",
+    color: "text-primary",
     url: "https://www.hackerrank.com/profile/devisriramasamy1",
   },
 ];
@@ -40,7 +40,7 @@ export default function CodingProfiles() {
             Where I Code
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Coding <span className="text-gradient">Profiles</span>
+            Coding <span className="text-primary">Profiles</span>
           </h2>
         </motion.div>
 
@@ -55,11 +55,10 @@ export default function CodingProfiles() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.08 }}
-              whileHover={{ y: -6 }}
               className="glass glass-hover rounded-2xl p-6 text-center group"
             >
               <p.icon
-                className={`text-4xl mx-auto mb-3 ${p.color} group-hover:scale-110 transition-transform`}
+                className={`text-4xl mx-auto mb-3 ${p.color}`}
               />
               <h3 className="font-bold mb-1">{p.name}</h3>
               <p className="text-xs text-muted-foreground">{p.stat}</p>

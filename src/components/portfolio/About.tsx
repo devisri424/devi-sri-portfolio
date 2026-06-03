@@ -4,7 +4,7 @@ import { GraduationCap, Brain, Code, Trophy } from "lucide-react";
 const highlights = [
   { icon: Brain, label: "ML & AI Passion" },
   { icon: Code, label: "Python & Data Science" },
-  { icon: Trophy, label: "Hackathon Participant" },
+  
   { icon: GraduationCap, label: "Self-Learner" },
 ];
 
@@ -21,7 +21,7 @@ export default function About() {
         >
           <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">About Me</p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            The story <span className="text-gradient">behind the code</span>
+            The story <span className="text-primary">behind the code</span>
           </h2>
         </motion.div>
 
@@ -39,9 +39,7 @@ export default function About() {
               into ML started with curiosity — and quickly became a craft.
             </p>
             <p className="text-muted-foreground leading-relaxed mb-6">
-              I love working with Python, exploring datasets on Kaggle, prototyping models, and
-              learning everything I can about modern AI. I actively participate in hackathons,
-              ship side projects, and pursue self-study to grow as an aspiring{" "}
+            I am passionate about Python, data science, and artificial intelligence. I enjoy building projects, exploring datasets, participating in hackathons, and continuously learning new technologies to enhance my skills.{" "}
               <span className="text-primary">ML / Data Engineer</span>.
             </p>
 
@@ -71,7 +69,7 @@ export default function About() {
           >
             <h3 className="text-2xl font-bold mb-6">Education</h3>
             <div className="relative pl-8 border-l-2 border-primary/30">
-              <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-gradient-primary animate-pulse-glow" />
+              <div className="absolute -left-2.5 top-0 w-5 h-5 rounded-full bg-primary" />
               <div className="glass rounded-2xl p-6 glass-hover">
                 <span className="text-xs text-primary font-medium">2024 — 2028</span>
                 <h4 className="text-xl font-bold mt-2">B.Tech — Artificial Intelligence & Data Science</h4>

@@ -32,8 +32,8 @@ export default function Navbar() {
       }`}
     >
       <div className="max-w-7xl mx-auto px-6 flex items-center justify-between">
-        <a href="#home" className="font-display font-bold text-xl">
-          <span className="text-gradient">Devi Sri R</span>
+        <a href="#home" className="font-display font-bold text-xl text-accent">
+          Devi Sri R
         </a>
 
         <ul className="hidden md:flex items-center gap-8">
@@ -41,10 +41,9 @@ export default function Navbar() {
             <li key={l.href}>
               <a
                 href={l.href}
-                className="text-sm text-muted-foreground hover:text-primary transition-colors relative group"
+                className="text-sm text-foreground hover:text-accent transition-colors"
               >
                 {l.label}
-                <span className="absolute -bottom-1 left-0 w-0 h-px bg-gradient-primary group-hover:w-full transition-all duration-300" />
               </a>
             </li>
           ))}
@@ -53,7 +52,7 @@ export default function Navbar() {
         <a
           href="/resume.pdf"
           download
-          className="hidden md:inline-flex items-center px-5 py-2 rounded-full bg-gradient-primary text-primary-foreground text-sm font-medium hover:scale-105 transition-transform glow-cyan"
+          className="hidden md:inline-flex items-center px-5 py-2 rounded-full btn-highlight text-sm font-medium transition-opacity"
         >
           Resume
         </a>

@@ -15,8 +15,6 @@ const articles = [
 export default function Articles() {
   return (
     <section id="blog" className="section-padding relative">
-      <div className="blob w-[400px] h-[400px] bg-accent/20 bottom-1/4 -left-32 animate-blob" />
-
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -29,7 +27,7 @@ export default function Articles() {
             Writing
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Featured <span className="text-gradient">Article</span>
+            Featured <span className="text-primary">Article</span>
           </h2>
         </motion.div>
 
@@ -44,7 +42,6 @@ export default function Articles() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ delay: i * 0.1 }}
-              whileHover={{ y: -4 }}
               className="block glass glass-hover rounded-2xl p-6 group cursor-pointer"
             >
               <div className="flex items-center justify-between mb-4">
@@ -56,7 +53,7 @@ export default function Articles() {
                 </span>
               </div>
 
-              <h3 className="text-xl font-bold mb-2 group-hover:text-gradient transition-all">
+              <h3 className="text-xl font-bold mb-2 group-hover:text-primary transition-colors">
                 {a.title}
               </h3>
 

@@ -37,7 +37,7 @@ export default function Achievements() {
         >
           <p className="text-primary text-sm font-medium tracking-widest uppercase mb-3">Milestones</p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Achievements & <span className="text-gradient">Recognition</span>
+            Achievements & <span className="text-primary">Recognition</span>
           </h2>
         </motion.div>
 
@@ -51,7 +51,7 @@ export default function Achievements() {
               transition={{ delay: i * 0.1 }}
               className="glass glass-hover rounded-2xl p-6 flex gap-5 items-start"
             >
-              <div className="shrink-0 w-12 h-12 rounded-xl bg-gradient-primary flex items-center justify-center glow-cyan">
+              <div className="shrink-0 w-12 h-12 rounded-xl bg-primary flex items-center justify-center">
                 <it.icon size={22} className="text-primary-foreground" />
               </div>
               <div>

@@ -47,8 +47,6 @@ const categories = [
 export default function Skills() {
   return (
     <section id="skills" className="section-padding relative">
-      <div className="blob w-[400px] h-[400px] bg-secondary/20 top-1/3 -left-32 animate-blob" />
-
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -61,7 +59,7 @@ export default function Skills() {
             Toolkit
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Skills & <span className="text-gradient">Technologies</span>
+            Skills & <span className="text-primary">Technologies</span>
           </h2>
         </motion.div>
 
@@ -75,7 +73,7 @@ export default function Skills() {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="glass glass-hover rounded-2xl p-6"
             >
-              <h3 className="text-lg font-bold mb-5 text-gradient">
+              <h3 className="text-lg font-bold mb-5 text-primary">
                 {cat.title}
               </h3>
 

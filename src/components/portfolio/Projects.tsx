@@ -6,7 +6,6 @@ const projects = [
     description:
       "AI-powered agriculture assistant that predicts crops and recommends fertilizers using ML datasets, with integrated smart assistance and live news support.",
     tech: ["Gemini API", "Kaggle", "Python", "NewsAPI"],
-    gradient: "from-cyan-500/20 to-blue-500/20",
     github:
       "https://github.com/devisri424/AI-based-Crop-recommendation-and-Fertilizer-suggestion-System",
   },
@@ -15,7 +14,6 @@ const projects = [
     description:
       "Robust backend course management platform with authentication, role-based access, secure database operations, and a clean Spring Boot architecture.",
     tech: ["Java", "Spring Boot", "MySQL"],
-    gradient: "from-blue-500/20 to-purple-500/20",
     github:
       "https://github.com/devisri424/Online-Course-Management-System",
   },
@@ -24,15 +22,13 @@ const projects = [
     description:
       "Interactive browser-based maze game with engaging gameplay mechanics, smooth controls, and a fully responsive design.",
     tech: ["HTML", "CSS", "JavaScript"],
-    gradient: "from-purple-500/20 to-pink-500/20",
     github: "https://github.com/devisri424/Hen-Maze-Game",
   },
   {
     title: "ET IntelliBrief",
     description:
       "AI-powered intelligent news summarization tool leveraging advanced prompting with ChatGPT and Claude for concise, high-quality briefs.",
-    tech: ["AI Prompting", "ChatGPT", "Claude"],
-    gradient: "from-cyan-500/20 to-purple-500/20",
+    tech: ["AI Prompting", "Gemini API", "Python"],
     github: "https://github.com/devisri424/ET-IntelliBrief",
   },
 ];
@@ -40,8 +36,6 @@ const projects = [
 export default function Projects() {
   return (
     <section id="projects" className="section-padding relative">
-      <div className="blob w-[500px] h-[500px] bg-primary/20 top-1/4 -right-32 animate-blob" />
-
       <div className="max-w-7xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -54,7 +48,7 @@ export default function Projects() {
             Featured Work
           </p>
           <h2 className="text-4xl md:text-5xl font-bold">
-            Projects I've <span className="text-gradient">built</span>
+            Projects I've <span className="text-primary">built</span>
           </h2>
         </motion.div>
 
@@ -66,13 +60,8 @@ export default function Projects() {
               whileInView={{ opacity: 1, y: 0 }}
               viewport={{ once: true }}
               transition={{ duration: 0.6, delay: i * 0.1 }}
-              whileHover={{ y: -8 }}
               className="group relative glass rounded-3xl p-8 overflow-hidden glass-hover"
             >
-              <div
-                className={`absolute inset-0 bg-gradient-to-br ${p.gradient} opacity-0 group-hover:opacity-100 transition-opacity duration-500`}
-              />
-
               <div className="relative z-10">
                 <div className="flex items-start justify-between mb-4">
                   <span className="text-xs text-muted-foreground font-mono">

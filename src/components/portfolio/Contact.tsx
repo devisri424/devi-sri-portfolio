@@ -28,8 +28,6 @@ const socials = [
 export default function Contact() {
   return (
     <section id="contact" className="section-padding relative">
-      <div className="blob w-[500px] h-[500px] bg-secondary/30 top-1/4 right-0 animate-blob" />
-
       <div className="max-w-6xl mx-auto relative z-10">
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -43,7 +41,7 @@ export default function Contact() {
           </p>
 
           <h2 className="text-4xl md:text-5xl font-bold">
-            Let's <span className="text-gradient">Connect</span>
+            Let's <span className="text-primary">Connect</span>
           </h2>
 
           <p className="text-muted-foreground mt-4 max-w-xl mx-auto">
@@ -74,7 +72,7 @@ export default function Contact() {
                     target="_blank"
                     rel="noopener noreferrer"
                     aria-label={s.label}
-                    className="w-11 h-11 rounded-xl bg-muted/50 hover:bg-gradient-primary hover:text-primary-foreground flex items-center justify-center transition-all hover:scale-110 hover:glow-cyan"
+                    className="w-11 h-11 rounded-xl bg-muted/50 hover:bg-primary hover:text-primary-foreground flex items-center justify-center transition-colors"
                   >
                     <s.icon size={18} />
                   </a>
@@ -148,7 +146,7 @@ export default function Contact() {
 
             <button
               type="submit"
-              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-gradient-primary text-primary-foreground font-medium hover:scale-[1.02] transition-transform glow-cyan"
+              className="w-full inline-flex items-center justify-center gap-2 px-6 py-3.5 rounded-xl bg-primary text-primary-foreground font-medium hover:opacity-90 transition-opacity"
             >
               Send Message <Send size={16} />
             </button>
